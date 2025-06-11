@@ -746,6 +746,33 @@ function AdminReport({ colorThem }) {
       ),
     },
 
+    {
+      field: "interval",
+      headerName: "Interval",
+      width: isXs ? 55 : 60,
+      minWidth: 55,
+      maxWidth: 60,
+      headerAlign: "cecenterter",
+      align: "center",
+      headerClassName: "custom-header",
+      renderHeader: () => (
+        <Typography
+          variant="body2"
+          sx={{ fontSize: "calc(0.6rem + 0.15vw)", fontWeight: "bold" }}
+        >
+          Interval
+        </Typography>
+      ),
+      renderCell: (params) => (
+        <Typography
+          variant="body2"
+          sx={{ fontSize: "calc(0.5rem + 0.2vw)" }} // Match header size or set your own
+        >
+          {params.value}
+        </Typography>
+      ),
+    },
+
 
     {
       field: "used_minutes",
@@ -1065,6 +1092,7 @@ function AdminReport({ colorThem }) {
         duration: item?.duration,
         billsec: item?.billsec,
         policy: item?.policy,
+        interval: item?.interval,
         used_minutes: item?.used_minutes,
         answer_at: item.answer_at,
         time: item.answer_at,
