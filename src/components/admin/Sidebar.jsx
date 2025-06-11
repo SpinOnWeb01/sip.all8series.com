@@ -148,12 +148,12 @@ function Sidebar({ colorThem }) {
             </MenuItem>
           </SubMenu>
 
-          {/* <MenuItem
+          <MenuItem
             icon={<AddCardIcon />}
             onClick={() => navigateTo(Router.ADMIN_PAYMENT)}
           >
             Payment
-          </MenuItem> */}
+          </MenuItem>
           <MenuItem
             icon={<HelpOutlineOutlinedIcon />}
             onClick={() => navigateTo(Router.ADMIN_REPORT)}
@@ -557,12 +557,12 @@ function Sidebar({ colorThem }) {
                           )}
                         </SubMenu>
 
-                        {/* <MenuItem
+                        <MenuItem
                           icon={<AddCardIcon />}
                           onClick={() => navigateTo(Router.ADMIN_PAYMENT)}
                         >
                           Payment
-                        </MenuItem> */}
+                        </MenuItem>
                         {user.user_role === "Reseller" ? (
                           <></>
                         ) : (

@@ -3,7 +3,7 @@ const prod = "https://sip.all8series.com";
 const domain = window.location.host;
 
 export const api ={
-    dev:prod,
+    dev:dev,
 }
 
 export const usersGroupRolesList = [
